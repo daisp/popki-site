@@ -1,0 +1,38 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  color: rgb(100, 100, 100);
+}
+
+body {
+  background-color: rgb(30, 30, 30);
+  font: 20px Arial, Helvetica, sans-serif;
+  color: rgb(100, 100, 100);
+}
+
+.mainContainer {
+  width: 80%;
+  background-color: rgb(20, 20, 20);
+  /* margin: auto; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.titleContainer {
+  padding: 20px;
+}
+
+.titleContainer h1 {
+  text-align: center;
+}
+
+.galleryContainer {
+  padding: 50px 50px;
+}
