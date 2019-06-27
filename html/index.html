@@ -1,15 +1,35 @@
+<!DOCTYPE html>
 <html>
+  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <!-- <script async src="https://www.youtube.com/iframe_api"></script> -->
+  <!-- <script src="./js/youTubeVideoSettings.js"></script> -->
   <head>
-    <title>Popki Studio</title>
+    <title>Bahmp Studio</title>
   </head>
   <body>
-    <link rel="stylesheet" type="text/css" href="css/style.css"></link>
-    <div class="mainContainer">
-      <div class="TitleContainer">
-        <h1>Popki Studio</h1>
-      </div>
+    <div class="bodyContainer">
+      <div class="headerContainer">
+          <div class="logoContainer">
+            <a href="./index.html">
+              <img class="logo" src="./images/logo.png" alt="logo">
+            </a>
+          </div><div class="menuContainer">
+            <div class="menuEntry"><a href="./work.html">Work</a></div><div class="menuEntry"><a href="./about.html">About</a></div><div class="menuEntry"><a href="./contact.html">Contact</a></div>
+          </div>
+        </div>
       <div class="galleryContainer">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fuga labore blanditiis dolores dolor numquam, natus voluptas, aspernatur error nihil rem illo ex veniam ullam. Incidunt libero quae perspiciatis a?
+        <div id="galleryEntry1stRow1" class="galleryEntry">
+          <video muted autoplay loop id="galleryVideo1stRow1" class="galleryVideo" src="./video/Learner Side Content.mp4" type="video/mp4"></video>
+          <!-- <div class="hovererDiv" id="galleryEntry1stRow1HovererDiv"><h1>Video 1</h1><br><h2>Description 1</h2></h1></div> -->
+        </div>
+        <div id="galleryEntry2ndRow1" class="galleryEntry">
+          <img class ="galleryImage" src="./images/demo.jpg" alt="">
+          <div class="hovererDiv" id="galleryEntry2ndRow1HovererDiv"><h1>project 2</h1><br><h2>company 2</h2></h1></div>
+        </div>
+        <div id="galleryEntry2ndRow2" class="galleryEntry"><img class ="galleryImage" src="./images/demo.jpg" alt=""></div>
+        <div id="galleryEntry3rdRow1" class="galleryEntry"><img class ="galleryImage" src="./images/demo.jpg" alt=""></div>
+        <div id="galleryEntry3rdRow2" class="galleryEntry"><img class ="galleryImage" src="./images/demo.jpg" alt=""></div>
+        <div id="galleryEntry3rdRow3" class="galleryEntry"><img class ="galleryImage" src="./images/demo.jpg" alt=""></div>
       </div>
     </div>
   </body>
