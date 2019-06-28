@@ -13,16 +13,9 @@ body {
 .bodyContainer {
   width: 70%;
   height: auto;
-  /* background-color: rgb(50, 50, 50); */
   display: inline-block;
   margin: 1%;
   border: 0px;
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* -ms-transform: translateX(-50%) translateY(-50%); */
-  /* -webkit-transform: translate(-50%, -50%); */
-  /* transform: translate(-50%, -50%); */
 }
 
 .headerContainer {
@@ -91,7 +84,7 @@ body {
   box-sizing: border-box;
   float: left;
   position: relative;
-  height: 300px;
+  height: 400px;
   background-color: black;
   overflow: hidden;
   z-index: 0;
@@ -176,4 +169,24 @@ body {
 
 .galleryEntry .galleryEntryDescriptionDiv:hover ~ .galleryImage {
   opacity: 0.2;
+}
+
+.moreButton {
+  background-color: rgb(50, 50, 50);
+  border: 4px solid gray;
+  color: gray;
+  padding: 20px 50px 20px 50px;
+  margin: 3%;
+  font: 30px Arial, Helvetica, sans-serif;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.moreButton:hover {
+  background-color: gray;
+  color: black;
+}
+
+.moreButton:active {
+  background-color: white;
+  color: black;
 }
