@@ -1,12 +1,12 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
   text-align: center;
   background-color: rgb(50, 50, 50);
-  font: 30px Arial, Helvetica, sans-serif;
   color: gray;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 .logoContainer {
-  padding: 10px 10px 10px 10px;
+  /* padding: 10px 10px 10px 10px; */
   box-sizing: border-box;
   float: left;
   height: 100%;
@@ -43,41 +43,46 @@ body {
 
 .menuContainer {
   box-sizing: border-box;
-  padding: 10px 10px 10px 10px;
+  /* padding: 10px 10px 10px 10px; */
   float: right;
   height: 100%;
   width: 50%;
 }
 
-.menuEntry {
-  height: 100%;
+.menuButton {
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 10px 0px 0px 30px;
+  padding: 0 0 8px 0;
+  color: gray;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0px 0px 1px 0px;
   width: auto;
   float: right;
-  padding: 10px 10px 10px 10px;
+  transition: border-color 0.15s, color 0.15s, padding 0.15s;
 }
 
-.menuEntry a {
+.menuButton a {
   text-decoration: none;
 }
 
-.menuEntry a:link {
+.menuButton:link {
   color: gray;
-  text-decoration: none;
 }
 
-.menuEntry a:visited {
+.menuButton:visited {
   color: gray;
-  text-decoration: none;
 }
 
-.menuEntry a:hover {
+.menuButton:hover {
   color: white;
-  text-decoration: none;
+  border-color: white;
+  padding: 0 0 2px 0;
 }
 
-.menuEntry a:active {
+.menuButton:active {
   color: white;
-  text-decoration: none;
 }
 
 .galleryContainer .galleryEntry {
@@ -106,6 +111,7 @@ body {
 }
 
 .galleryEntry .galleryEntryDescriptionDiv {
+  color: white;
   display: flex;
   position: absolute;
   align-items: center;
@@ -130,33 +136,34 @@ body {
 }
 
 #galleryEntry1stRow1 {
+  height: 600px;
   width: 100%;
-  margin: 0% 0% 1% 0%;
+  margin: 0% 0% 1.5% 0%;
 }
 
 #galleryEntry2ndRow1 {
-  width: 39%;
-  margin: 0% 1% 1% 0%;
+  width: 38.5%;
+  margin: 0% 1.5% 1.5% 0%;
 }
 
 #galleryEntry2ndRow2 {
   width: 60%;
-  margin: 0% 0% 1% 0%;
+  margin: 0% 0% 1.5% 0%;
 }
 
 #galleryEntry3rdRow1 {
-  width: 32.6666%;
-  margin: 0% 1% 1% 0%;
+  width: 32.3333%;
+  margin: 0% 1.5% 1.5% 0%;
 }
 
 #galleryEntry3rdRow2 {
-  width: 32.6666%;
-  margin: 0% 1% 1% 0%;
+  width: 32.3333%;
+  margin: 0% 1.5% 1.5% 0%;
 }
 
 #galleryEntry3rdRow3 {
-  width: 32.6666%;
-  margin: 0% 0% 1% 0%;
+  width: 32.3333%;
+  margin: 0% 0% 1.5% 0%;
 }
 
 .galleryEntry .galleryEntryDescriptionDiv:hover {
@@ -172,18 +179,18 @@ body {
 }
 
 .moreButton {
+  font-size: 20px;
   background-color: rgb(50, 50, 50);
-  border: 4px solid gray;
+  border: 2px solid gray;
   color: gray;
-  padding: 20px 50px 20px 50px;
+  padding: 10px 50px 10px 50px;
   margin: 3%;
-  font: 30px Arial, Helvetica, sans-serif;
-  transition: background-color 0.15s, color 0.15s;
+  transition: border 0.15s, color 0.15s;
 }
 
 .moreButton:hover {
-  background-color: gray;
-  color: black;
+  color: white;
+  border-color: white;
 }
 
 .moreButton:active {
