@@ -43,7 +43,6 @@ body {
 
 .menuContainer {
   box-sizing: border-box;
-  /* padding: 10px 10px 10px 10px; */
   float: right;
   height: 100%;
   width: 50%;
@@ -99,7 +98,7 @@ body {
   position: absolute;
   top: -10%;
   left: 0;
-  width: 100%;
+  width: 101%;
   height: auto;
   z-index: 1;
   opacity: 1;
