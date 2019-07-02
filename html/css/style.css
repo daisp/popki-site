@@ -5,10 +5,31 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 40px;
+}
+
 a {
   text-decoration: none;
   color: gray;
   transition: color 0.15s;
+}
+
+a:link {
+  color: gray;
+}
+
+a:visited {
+  color: gray;
+}
+
+a:hover {
+  color: white;
+  border-color: white;
+}
+
+a:active {
+  color: white;
 }
 
 body {
@@ -18,10 +39,10 @@ body {
 }
 
 .bodyContainer {
-  width: 75%;
+  width: 70%;
   height: auto;
   display: inline-block;
-  margin: 2%;
+  margin: 2% 0 1% 0;
   border: 0px;
 }
 
@@ -29,7 +50,7 @@ body {
   width: 100%;
   display: flex;
   margin: 0% 0% 2% 0%;
-  padding: 0 1% 0 1%;
+  padding: 0 0.75% 0 0.75%;
 }
 
 .logoContainer {
@@ -38,23 +59,6 @@ body {
   justify-content: left;
   align-items: center;
   flex: 1;
-}
-
-.logoContainer a:link {
-  color: gray;
-}
-
-.logoContainer a:visited {
-  color: gray;
-}
-
-.logoContainer a:hover {
-  color: white;
-  border-color: white;
-}
-
-.logoContainer a:active {
-  color: white;
 }
 
 .logo {
@@ -101,99 +105,90 @@ body {
 .menuButton:active {
   color: white;
 }
+.HomeGalleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+  flex-direction: column;
+}
 
-.galleryContainer .galleryEntry {
+.HomeGalleryRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.HomeGalleryEntry {
+  display: flex;
   line-height: 1.5;
-  box-sizing: border-box;
-  float: left;
-  position: relative;
-  height: 400px;
   background-color: black;
   overflow: hidden;
   z-index: 0;
+  margin: 0.75%;
 }
 
-.galleryEntry .galleryVideo {
-  position: absolute;
-  top: -10%;
-  left: 0;
-  width: 101%;
-  height: auto;
-  z-index: 1;
+.HomeGalleryImage,
+.HomeGalleryVideo {
+  margin: 0 0 0 -100%;
+  width: 100%;
   opacity: 1;
+  z-index: 1;
   transition: opacity 0.15s;
 }
 
-.galleryEntry .galleryVideo:hover {
+.HomeGalleryEntry .HomeGalleryVideo:hover {
   opacity: 0.2;
 }
 
-.galleryEntry .galleryEntryDescriptionDiv {
+.HomeGalleryEntry .HomeGalleryEntryDescriptionDiv {
   color: white;
   display: flex;
-  position: absolute;
   align-items: center;
   justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 100%;
+  align-self: stretch;
   width: 100%;
   z-index: 2;
   opacity: 0;
   transition: opacity 0.15s;
 }
 
-.galleryEntry .galleryImage {
-  position: relative;
-  top: -200px;
-  width: 100%;
-  height: auto;
-  opacity: 1;
-  transition: opacity 0.15s;
-}
-
-.galleryEntry .galleryEntryDescriptionDiv:hover {
+.HomeGalleryEntry .HomeGalleryEntryDescriptionDiv:hover {
   opacity: 1;
 }
 
-.galleryEntry .galleryEntryDescriptionDiv:hover ~ .galleryVideo {
+.HomeGalleryEntry .HomeGalleryEntryDescriptionDiv:hover ~ .HomeGalleryVideo {
   opacity: 0.2;
 }
 
-.galleryEntry .galleryEntryDescriptionDiv:hover ~ .galleryImage {
+.HomeGalleryEntry .HomeGalleryEntryDescriptionDiv:hover ~ .HomeGalleryImage {
   opacity: 0.2;
 }
 
-#galleryEntry1stRow1 {
-  height: 600px;
-  width: 100%;
-  margin: 0% 0% 1.5% 0%;
+#HomeGalleryEntryR1C1 {
+  flex: 1;
 }
 
-#galleryEntry2ndRow1 {
-  width: 38.5%;
-  margin: 0% 1.5% 1.5% 0%;
+#HomeGalleryEntryR2C1 {
+  flex: 1;
+  align-self: stretch;
 }
 
-#galleryEntry2ndRow2 {
-  width: 60%;
-  margin: 0% 0% 1.5% 0%;
+#HomeGalleryEntryR2C2 {
+  flex: 1.5;
 }
 
-#galleryEntry3rdRow1 {
-  width: 32.3333%;
-  margin: 0% 1.5% 1.5% 0%;
+#HomeGalleryEntryR3C1 {
+  flex: 1;
 }
 
-#galleryEntry3rdRow2 {
-  width: 32.3333%;
-  margin: 0% 1.5% 1.5% 0%;
+#HomeGalleryEntryR3C2 {
+  flex: 1;
 }
 
-#galleryEntry3rdRow3 {
-  width: 32.3333%;
-  margin: 0% 0% 1.5% 0%;
+#HomeGalleryEntryR3C3 {
+  flex: 1;
 }
 
 .moreButton {
@@ -202,7 +197,7 @@ body {
   border: 2px solid gray;
   color: gray;
   padding: 10px 50px 10px 50px;
-  margin: 3% 0% 3% 0%;
+  margin: 3% 0% 0% 0%;
   transition: border 0.15s, color 0.15s;
 }
 
@@ -215,7 +210,28 @@ body {
   color: white;
 }
 
-/* Projects Page */
+.Footer {
+  padding: 0 0.75% 0 0.75%;
+  margin: 4% 0 0% 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.FooterWelcomeText {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.CopyrightText {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* specific for projects page */
 
 .ProjectsGalleryContainer {
   display: flex;
@@ -236,7 +252,7 @@ body {
   align-items: center;
   line-height: 1.5;
   background-color: black;
-  margin: 0.8% 0.8% 0.8% 0.8%;
+  margin: 0.75%;
   flex: 1;
   overflow: hidden;
   z-index: 0;
