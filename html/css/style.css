@@ -1,8 +1,14 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.15s;
 }
 
 body {
@@ -21,41 +27,33 @@ body {
 
 .headerContainer {
   width: 100%;
-  display: inline-block;
-  box-sizing: border-box;
+  display: flex;
   margin: 0% 0% 2% 0%;
   padding: 0 1% 0 1%;
 }
 
 .logoContainer {
-  /* padding: 10px 10px 10px 10px; */
-  box-sizing: border-box;
-  float: left;
-  height: 100%;
-  width: 50%;
-  text-align: left;
+  display: flex;
+  /* height: 100%; */
+  justify-content: left;
+  align-items: center;
+  flex: 1;
 }
 
-.logoContainer a {
-  text-decoration: none;
+.logoContainer a:link {
   color: gray;
 }
 
-.logoContainer:link a {
+.logoContainer a:visited {
   color: gray;
 }
 
-.logoContainer:visited a {
-  color: gray;
-}
-
-.logoContainer:hover a {
+.logoContainer a:hover {
   color: white;
   border-color: white;
-  padding: 0 0 2px 0;
 }
 
-.logoContainer:active a {
+.logoContainer a:active {
   color: white;
 }
 
@@ -66,28 +64,25 @@ body {
 }
 
 .menuContainer {
-  box-sizing: border-box;
-  float: right;
-  height: 100%;
-  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 
 .menuButton {
+  display: flex;
+  justify-content: left;
   font-size: 20px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
   margin: 10px 0px 0px 30px;
-  padding: 0 0 8px 0;
+  padding: 0 0 2px 0;
   color: gray;
   border-style: solid;
-  border-color: rgba(0, 0, 0, 0);
+  border-color: transparent;
   border-width: 0px 0px 1px 0px;
   width: auto;
   float: right;
   transition: border-color 0.15s, color 0.15s, padding 0.15s;
-}
-
-.menuButton a {
-  text-decoration: none;
 }
 
 .menuButton:link {
@@ -101,7 +96,6 @@ body {
 .menuButton:hover {
   color: white;
   border-color: white;
-  padding: 0 0 2px 0;
 }
 
 .menuButton:active {
@@ -242,7 +236,7 @@ body {
   align-items: center;
   line-height: 1.5;
   background-color: black;
-  margin: 1%;
+  margin: 0.8% 0.8% 0.8% 0.8%;
   flex: 1;
   overflow: hidden;
   z-index: 0;
@@ -262,14 +256,6 @@ body {
   z-index: 1;
   opacity: 1;
   transition: opacity 0.15s;
-}
-
-/* Responsive layout - makes a one column-layout instead of two columns */
-@media screen and (max-width: 1000px) {
-  .ProjectsGalleryEntry {
-    flex: 100%;
-    max-width: 100%;
-  }
 }
 
 .ProjectsGalleryEntryDescriptionDiv {
