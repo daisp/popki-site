@@ -6,7 +6,7 @@
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 a {
@@ -79,7 +79,7 @@ body {
   font-size: 20px;
   background-color: transparent;
   margin: 10px 0px 0px 30px;
-  padding: 0 0 2px 0;
+  padding: 0 0 6px 0;
   color: gray;
   border-style: solid;
   border-color: transparent;
@@ -100,6 +100,7 @@ body {
 .menuButton:hover {
   color: white;
   border-color: white;
+  padding: 0 0 2px 0;
 }
 
 .menuButton:active {
@@ -211,24 +212,38 @@ body {
 }
 
 .Footer {
-  padding: 0 0.75% 0 0.75%;
-  margin: 4% 0 0% 0;
+  background-color: rgba(25, 25, 25);
+  padding: 2% 16% 1% 16%;
+  margin: 3% 0 0% 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.FooterWelcomeText {
+.WelcomeText {
+  margin: 10% 0 5% 0;
+  line-height: 1.5;
   display: flex;
   flex: 1;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.WelcomeText h1 {
+  font-size: 50px;
+}
+
+.WelcomeText h2 {
+  font-size: 30px;
 }
 
 .CopyrightText {
+  margin: 3% 0 0 0;
   display: flex;
+  flex-direction: row;
   flex: 1;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  font-size: 13px;
 }
 
 /* specific for projects page */
