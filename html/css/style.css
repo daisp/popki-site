@@ -33,6 +33,9 @@ a:active {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   background-color: rgb(40, 40, 40);
   color: gray;
@@ -47,10 +50,13 @@ body {
 }
 
 .headerContainer {
+  position: fixed;
+  background-color: rgb(40, 40, 40);
   width: 100%;
   display: flex;
-  margin: 0% 0% 2% 0%;
-  padding: 0 0.75% 0 0.75%;
+  margin: auto;
+  padding: 1% 15.4% 1% 15.4%;
+  z-index: 10;
 }
 
 .logoContainer {
@@ -198,7 +204,7 @@ body {
   border: 2px solid gray;
   color: gray;
   padding: 10px 50px 10px 50px;
-  margin: 3% 0% 0% 0%;
+  margin: 2.5% 0% 0% 0%;
   transition: border 0.15s, color 0.15s;
 }
 
@@ -212,15 +218,32 @@ body {
 }
 
 .Footer {
+  font-size: 20px;
   background-color: rgba(25, 25, 25);
-  padding: 2% 16% 1% 16%;
+  padding: 3% 15.4% 4% 15.4%;
   margin: 3% 0 0% 0;
   display: flex;
+  flex-direction: row;
+  align-self: stretch;
+}
+
+.FooterContact {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.FooterCentral {
+  flex: 1;
+}
+
+.FooterRight {
+  flex: 1;
 }
 
 .WelcomeText {
-  margin: 10% 0 5% 0;
+  margin: 4.5% 0 2% 0;
   line-height: 1.5;
   display: flex;
   flex: 1;
@@ -229,21 +252,30 @@ body {
 }
 
 .WelcomeText h1 {
-  font-size: 50px;
+  font-size: 43px;
 }
 
 .WelcomeText h2 {
   font-size: 30px;
 }
 
-.CopyrightText {
-  margin: 3% 0 0 0;
+.WelcomeText a {
+  text-underline-position: under;
+  text-decoration: underline;
+}
+
+.FooterCopyright {
   display: flex;
-  flex-direction: row;
   flex: 1;
-  align-items: flex-end;
-  justify-content: flex-start;
+  margin: 1%;
+  align-items: center;
+  justify-content: center;
   font-size: 13px;
+}
+
+.SocialMediaIcon {
+  opacity: 0.4;
+  margin: 1%;
 }
 
 /* specific for projects page */
