@@ -45,7 +45,7 @@ body {
   width: 70%;
   height: auto;
   display: inline-block;
-  margin: 2% 0 1% 0;
+  margin: 5.5% 0 1% 0;
   border: 0px;
 }
 
@@ -341,4 +341,167 @@ body {
 
 .ProjectsGalleryEntryDescriptionDiv:hover ~ .ProjectsGalleryImage {
   opacity: 0.1;
+}
+
+/* Per-Project Page */
+
+.ProjectPageDescription {
+  margin: 5% 0 5% 0;
+}
+
+.ProjectPageDescription h1 {
+  font-size: 40px;
+}
+
+.ProjectPageDescription h2 {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.ProjectPageDetails {
+  padding: 2% 20% 0 20%;
+}
+
+.ProjectPageDetails p {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.ProjectPageGalleryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 0 4% 0;
+}
+
+.ProjectPageGalleryRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ProjectPageGalleryEntry {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  margin: 0.75%;
+  flex: 1;
+  overflow: hidden;
+}
+
+#ProjectPageGalleryEntry2ndRow {
+  align-self: stretch;
+}
+
+.ProjectPageGalleryEntry .ProjectPageGalleryImage {
+  width: 100%;
+  height: auto;
+}
+
+.ProjectPageGalleryEntry .ProjectPageGalleryVideo {
+  width: 100%;
+  height: auto;
+}
+
+.ProjectPageCredits {
+  padding: 1% 22% 3.5% 22%;
+  background-color: rgb(60, 60, 60);
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+}
+
+.ProjectPageCredits h2 {
+  font-size: 36px;
+}
+
+.ProjectPageCredits h3 {
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.ProjectPageCredits h4 {
+  font-size: 22px;
+}
+
+.ProjectPageCreditsTitle {
+  padding: 3% 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#ProjectPageCreditsMainTitleRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProjectPageCreditsRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ProjectPageCreditsLeft {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ProjectPageCreditsLeftUpper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectPageCreditsLeftLower {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProjectPageCreditsCenter {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+.ProjectPageCreditsRight {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.ProjectPageCreditsTextWrapper {
+  margin: 10% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.ProjectPageCreditsRole {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ProjectPageCreditsNames {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
