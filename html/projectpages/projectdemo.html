@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+  <head>
+      <link
+        href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+        rel="stylesheet"
+      />
+      <title>Bahmp - Project Demo</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+        $(function() {
+          var myStylesLocation = "../css/style.css";
+          $(
+            '<link rel="stylesheet" type="text/css" href="' +
+              myStylesLocation +
+              '">'
+          ).appendTo("head");
+          $("#headerContainer").load("../header.html");
+          $("#Footer").load("../footer.html");
+        });
+      </script>
+      <!-- <link rel="stylesheet" type="text/css" href="css/style.css"></link> -->
+    </head>
+  <body>
+    <div class="headerContainer" id="headerContainer">
+        <!-- loaded externally for all pages -->
+    </div>
+    <div class="bodyContainer">
+      <div class="ProjectPageVideoEmbed"></div>
+      <div class="ProjectPageDescription">
+          <div class="ProjectPageProjectTitle"></div>
+          <div class="ProjectPageCompanyName"></div>
+          <div class="ProjectPageDetails"></div>
+      </div>
+      <div class="ProjectPageGalleryContainer">
+        <div class="ProjectPageGalleryRow">
+            <div class="ProjectPageGalleryEntry">
+                <div class="ProjectPageGalleryEntryDescriptionDiv" id="ProjectPageGalleryEntryR1C1DescriptionDiv"><div><h1>Project 1</h1><h3>Company 1</h3></div></div>
+                <video muted autoplay loop class="ProjectPageGalleryVideo" src="../video/Learner Side Content.mp4" type="video/mp4"></video>
+              </div>
+              <div class="ProjectsGalleryEntry">
+                <div class="ProjectsGalleryEntryDescriptionDiv" id="ProjectsGalleryEntryR1C2DescriptionDiv"><div><h1>Project 2</h1><h3>Company 2</h3></div></div>
+                <img class ="ProjectsGalleryImage" src="../images/demo.jpg" alt="">
+              </div>
+        </div>
+      </div>
+    </div>
+    <div id="Footer" class="Footer">
+        <!-- loaded externally for all pages -->
+      </div>
+  </body>
+</html>
