@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
       rel="stylesheet"
@@ -9,12 +10,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $(function() {
-        var myStylesLocation = "./css/style.css";
-        $(
-          '<link rel="stylesheet" type="text/css" href="' +
-            myStylesLocation +
-            '">'
-        ).appendTo("head");
+        // var myStylesLocation = "./css/style.css";
+        // $(
+        //   '<link rel="stylesheet" type="text/css" href="' +
+        //     myStylesLocation +
+        //     '">'
+        // ).appendTo("head");
         $("#headerContainer").load("./header.html");
         $("#Footer").load("./footer.html");
       });
