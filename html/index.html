@@ -9,7 +9,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
       $(function() {
-        var myStylesLocation = "./css/style.css";
+        var myStylesLocation = "";
+        var location = window.location.pathname;
+        var dir_name = location.substring(0, location.lastIndexOf("/"));
+        if (dir_name == "projectpages") {
+          myStylesLocation = "../css/style.css";
+        } else {
+          myStylesLocation = "./css/style.css";
+        }
         $(
           '<link rel="stylesheet" type="text/css" href="' +
             myStylesLocation +
