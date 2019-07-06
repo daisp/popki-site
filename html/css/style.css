@@ -327,7 +327,7 @@ h1 {
 
 .WelcomeText h1 {
   font-size: 43px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .WelcomeText h2 {
@@ -460,6 +460,7 @@ h1 {
 }
 
 .ProjectPageDetails p {
+  line-height: 1.5;
   text-align: center;
   font-weight: 100;
   font-size: 20px;
