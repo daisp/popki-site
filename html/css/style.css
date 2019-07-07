@@ -101,6 +101,48 @@ h1 {
   z-index: 10;
 }
 
+.purpleBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #9d71ee;
+  color: white;
+}
+
+.purpleBody a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.purpleBody a:link {
+  color: white;
+}
+
+.purpleBody a:visited {
+  color: white;
+}
+
+.purpleBody a:hover {
+  color: black;
+  border-color: black;
+}
+
+.purpleBody a:active {
+  color: black;
+}
+
+.PurpleHeaderContainer {
+  position: fixed;
+  background-color: #9d71ee;
+  width: 100%;
+  display: flex;
+  margin: auto;
+  padding: 1.5% 15.4% 1.5% 15.4%;
+  z-index: 10;
+}
+
 .logoContainer {
   display: flex;
   flex-direction: column;
@@ -213,6 +255,10 @@ h1 {
   z-index: 2;
   opacity: 0;
   transition: opacity 0.15s;
+}
+
+.HomeGalleryEntry .HomeGalleryEntryDescriptionDiv h3 {
+  font-weight: 100;
 }
 
 .HomeGalleryEntry .HomeGalleryEntryDescriptionDiv:hover {
@@ -336,27 +382,34 @@ h1 {
   font-weight: 100;
 }
 
+.WelcomeText a {
+  font-size: 30px;
+  margin: 2% 0 0 0;
+  border-bottom: 2px solid white;
+}
+
+.WelcomeText p {
+  margin: 2% 20% 2% 20%;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
 .darkBody .WelcomeText a {
   color: gray;
-  text-underline-position: under;
-  text-decoration: underline;
+  border-bottom: 2px solid gray;
+  border-color: gray;
+  font-size: 40px;
+  transition: border-color 0.15s, color 0.15s;
 }
 
 .darkBody .WelcomeText a:hover {
   color: white;
-  text-underline-position: under;
-  text-decoration: underline;
-}
-
-.darkBody .WelcomeText a:visited {
-  text-underline-position: under;
-  text-decoration: underline;
+  border-color: white;
 }
 
 .darkBody .WelcomeText a:active {
   color: white;
-  text-underline-position: under;
-  text-decoration: underline;
+  border-color: white;
 }
 
 .FooterCopyright {
@@ -603,4 +656,18 @@ h1 {
   justify-content: flex-start;
   align-items: flex-start;
   font-weight: 800;
+}
+
+/* About page-specific */
+
+.AboutPageImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8% 0 7% 0;
+  padding: 0 0.65% 0 0.65%;
+}
+
+.AboutPageImage img {
+  width: 100%;
 }
